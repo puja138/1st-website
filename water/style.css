@@ -1,0 +1,98 @@
+/* Remove default margins and paddings */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content container */
+.container {
+    position: relative;
+    max-width: 100%;
+    padding-top: 80px; /* To avoid content hiding under fixed navbar */
+}
+
+/* Background image styling */
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Text overlay on image */
+.container h1,
+.container h2,
+.container p,
+.container ul {
+    position: relative;
+    color: rgba(10, 102, 16, 0.934);
+    z-index: 3;
+    padding: 0 20px;
+}
+
+/* Headings and paragraph spacing */
+.container h1 {
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+.container h2 {
+    margin-top: 28px;
+    font-size: 32px;
+}
+
+.container p {
+    font-size: 18px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.container h2:nth-of-type(3) {
+    margin-top: 60px;
+}
+
+.container ul {
+    max-width: 800px;
+    padding-left: 40px;
+}
+
+/* Fixed header/navbar styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(21, 12, 12, 0.6);
+    z-index: 4;
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* fixed wrong color code */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: lightyellow !important;
+}

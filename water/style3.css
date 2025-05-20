@@ -1,0 +1,152 @@
+/* Background and basic setup */
+body.orderandrates-page {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: lightyellow;
+}
+
+/* Headings */
+h1 {
+    background-color: rgba(163, 163, 244, 0.1);
+    color: rgb(16, 135, 162);
+    text-align: center;
+    text-shadow: 1px 1px 2px lightgreen;
+    padding: 15px;
+    margin: 80px 0 20px; /* leave space below navbar */
+}
+
+h3 {
+    background-color: rgba(163, 163, 244, 0.5);
+    color: rgb(7, 22, 117);
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+/* Form container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form fields */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #e7f2ff;
+    font-weight: bold;
+}
+
+table td input[type="number"] {
+    width: 70px;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #005f8a;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    table td input[type="number"] {
+        width: 50px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        float: none;
+    }
+}

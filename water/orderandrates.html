@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JalSeva (India)</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon"
+        href="https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="water">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="orderandrates.html">Order & Rates</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+    </ul>
+</nav>
+
+        <div class="container"></div>
+        <h1>
+            Water Supplier Order Form
+        </h1>
+        <form>
+            <label><i>Customer Name:</i></label>
+            <input type="text" name="customer_name">
+
+            <label><i>Mobile Number:</i></label>
+            <input type="text" name="mobile_number">
+
+            <label><i>Address/Location:</i></label>
+            <textarea name="address" rows="3"></textarea>
+
+            <label><i>Order Date & Time:</i></label>
+            <input type="datetime-local" name="order_datetime">
+
+            <label><i>Quantity:</i></label>
+            <input type="number" name="quantity" placeholder="Gallons/Tanker">
+
+            <h3><i>Available Products:</i></h3>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Price($)</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>250ml Bottle</td>
+                    <td>10</td>
+                    <td><input type="number" name="qty_250ml" min="0" value="0"></td>
+                </tr>
+                <tr>
+                    <td>500ml Bottle</td>
+                    <td>20</td>
+                    <td><input type="number" name="qty_500ml" min="0" value="0"></td>
+                </tr>
+                <tr>
+                    <td>1000ml Bottle</td>
+                    <td>30</td>
+                    <td><input type="number" name="qty_1000ml" min="0" value="0"></td>
+                </tr>
+                <tr>
+                    <td>20 Litre Drum</td>
+                    <td>40</td>
+                    <td><input type="number" name="price_drum" style="width: 60px"></td>
+                    <td><input type="number" name="qty_drum" min="0" value="0"></td>
+                </tr>
+            </table>
+            <label><i>Payment Mode:</i></label>
+            <select name="payment_mode">
+                <option value="cash">Cash</option>
+                <option value="online">Online(UPI / Bank)</option>
+                <option value="easypaisa">Paytm / Google pay</option>
+            </select>
+            <button type="submit" class="submit-btn">Submit Order</button>
+
+        </form>
+
+
+    </header>
+
+</body>
+
+</html>

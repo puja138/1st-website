@@ -1,0 +1,91 @@
+body.home-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/103567/pexels-photo-103567.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: lightyellow;
+}
+
+h1 {
+    background-color: rgba(163, 163, 244, 0.1);
+    color: rgb(16, 135, 162);
+    text-align: center;
+    text-shadow: 1px 1px 2px lightgreen;
+    padding: 15px;
+    margin-top: 80px;
+    font-size: 36px;
+}
+
+h2 {
+    background-color: rgba(163, 163, 244, 0.5);
+    color: rgb(7, 22, 117);
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+ul li {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    color: #222;
+    padding: 10px;
+    list-style: inside;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
